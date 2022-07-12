@@ -33,5 +33,5 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    my_scheduler_job()
+    return {"message":"Hallo"}   #my_scheduler_job()
     
