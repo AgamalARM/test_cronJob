@@ -27,11 +27,11 @@ def my_scheduler_job():
     scheduler.start()
 
 
-my_scheduler_job()
-# app = FastAPI()
+
+app = FastAPI()
 
 
-# @app.get("/")
-# async def root():
-#     x = my_scheduler_job()
-#     return x
+@app.get("/")
+async def root():
+    my_scheduler_job()
+    
